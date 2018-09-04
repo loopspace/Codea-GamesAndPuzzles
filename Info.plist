@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Unknown</string>
+	<key>Buffer Order</key>
+	<array>
+		<string>Main</string>
+		<string>Game</string>
+		<string>Ladders</string>
+		<string>Cubes</string>
+		<string>CoordinateGrid</string>
+		<string>Anagrams</string>
+		<string>Hangman</string>
+		<string>MakeANumber</string>
+		<string>MentalMaths</string>
+		<string>SlidingPicture</string>
+		<string>Utilities</string>
+	</array>
+	<key>Dependencies</key>
+	<array>
+		<string>cmodule</string>
+		<string>Word Lists</string>
+	</array>
+	<key>Description</key>
+	<string>No description available</string>
+	<key>Icon</key>
+	<string>Icon.png</string>
+</dict>
+</plist>
