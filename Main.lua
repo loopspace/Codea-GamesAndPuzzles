@@ -2,10 +2,10 @@
 
 displayMode(FULLSCREEN_NO_BUTTONS)
 -- displayMode(OVERLAY)
-WIDTH,HEIGHT = 768,1024
+-- WIDTH,HEIGHT = 768,1024
 function setup()
     cmodule "Games and Puzzles"
-    cmodule.path("Library Base", "Library UI", "Library Graphics", "Library Utilities", "Library Maths")
+    cmodule.path("Library Base", "Library UI", "Library Graphics", "Library Utilities", "Library Maths", "Shaders")
     local Touches = cimport "Touch"
     local UI = cimport "UI"
     cimport "Menu"

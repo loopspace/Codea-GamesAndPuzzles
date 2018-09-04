@@ -566,7 +566,7 @@ function define_cube(faces)
     local cube = mesh()
     local i = image(1,1)
     i:set(1,1,255,255,255,255)
-    cube.shader = shader("Documents:Border")
+    cube.shader = cimport "Border"
     cube.shader.width = .03
     cube.shader.antialias = .01
     cube.texture = i
