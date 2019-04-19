@@ -13,6 +13,7 @@ function setup()
     cimport "Keyboard"
     cimport "Utilities"
     cimport "VecExt"
+    cimport "ColourExt"
     local Font = unpack(cimport "Font")
     local Anagram = cimport "Anagrams"
     local Hangman = cimport "Hangman"
@@ -22,6 +23,7 @@ function setup()
     local MentalMaths = cimport "MentalMaths"
     local Ladder = cimport "Ladders"
     local Sudoku = cimport "Sudoku"
+    local NoughtsAndCrosses = cimport "NoughtsAndCrosses"
     touches = Touches()
     ui = UI(touches)
     local m = ui:systemmenu()
@@ -55,6 +57,7 @@ function setup()
     mmaths = MentalMaths(ui)
     ladder = Ladder(ui)
     sudoku = Sudoku(ui)
+    noughtsandcrosses = NoughtsAndCrosses(ui)
     local m = ui:addMenu({
         title = "Game",
         attach = true
@@ -98,7 +101,8 @@ function setup()
         {"Cube",cubes},
         {"Mental Maths",mmaths},
         {"Ladders",ladder},
-        {"Sudoku Solver",sudoku}
+        {"Sudoku Solver",sudoku},
+        {"Ultimate Noughts and Crosses",noughtsandcrosses}
     }) do
     gm:addItem({
         title = v[1],
@@ -118,7 +122,7 @@ function setup()
     end
     -- switch(sudoku)
     orientationChanged = _orientationChanged
-
+    -- startRecording()
 end
 
 function draw()
@@ -131,6 +135,9 @@ function draw()
 end
 
 function touched(touch)
+    if isRecording() then
+        stopRecording()
+    end
     touches:addTouch(touch)
 end
 

@@ -460,7 +460,7 @@ function MentalMaths:nextSum()
         return 2
     end
     self.m = self.m + 1
-    speech.rate = 0
+        -- speech.rate = 0
     if not self.mute then
         speech.say(self.types[self.type][3](self.problems[self.index[self.m]]))
     end

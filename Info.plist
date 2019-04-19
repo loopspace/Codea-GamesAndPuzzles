@@ -16,15 +16,14 @@
 		<string>MakeANumber</string>
 		<string>MentalMaths</string>
 		<string>SlidingPicture</string>
-		<string>Sudoku</string>
 		<string>Utilities</string>
+		<string>Sudoku</string>
+		<string>NoughtsAndCrosses</string>
 	</array>
-	<key>Created</key>
-	<string>2012-09-27 18:04:41 +0000</string>
 	<key>Dependencies</key>
 	<array>
+		<string>cmodule</string>
 		<string>Word Lists</string>
-		<string>CModule</string>
 	</array>
 	<key>Description</key>
 	<string>No description available</string>
